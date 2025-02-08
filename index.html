@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validate Date</title>
+</head>
+<body>
+<main class="main calculator">
+	<div class="container">
+        <form id="dateForm">
+            <div class="input-group">
+                <label for="day">Day</label>
+                <input type="number" id="day" name="day">
+                <span class="error" id="dayError"></span>
+            </div>
+            <div class="input-group">
+                <label for="month">Month</label>
+                <input type="number" id="month" name="month">
+                <span class="error" id="monthError"></span>
+            </div>
+            <div class="input-group">
+                <label for="year">Year</label>
+                <input type="number" id="year" name="year">
+                <span class="error" id="yearError"></span>
+			</div></form>
+            <button class="btn" type="submit">::after</button>
+        <div class="result">
+       <div class="result-text result-years">
+			<span>--</span>
+				years
+        </div>
+			 <div class="result-text result-months">
+			<span>--</span>
+				months
+        </div>
+			 <div class="result-text result-day">
+			<span>--</span>
+				day
+        </div>
+    </div>
+		</main>
+</body>
+</html>

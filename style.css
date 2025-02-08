@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    display: block;
+    margin: 0;
+}
+.calculator{
+	font-family: "pontano-sans";
+	font-weight: 700;
+	color: #000000;
+	font-size: 32px;
+	line-height: 1.2;
+	background-color: #F9F9F9;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 30px;
+}
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 35px;
+	border-bottom-right-radius: 175px;
+    width: 60%;
+	max-width: 650px;
+	min-height: 470px;
+	margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8b8b8b;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	position: relative;
+    column-gap: 20px;
+    margin-bottom
+}
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.result {
+    margin-top: 20px;
+	display: flex;
+    flex-direction:column;
+	font-weight: 800;
+	font-size: 4rem;
+	font-style: italic;
+}
+.result-text span{
+	color: #000000;
+	margin-right:8px; 
+}
+.btn{
+	position: absolute;
+	right: 0;
+	bottom: -33;
+	width: 66px;
+	height: 66px;
+	border: none;
+    padding: 10px 20px;
+    background-color: #7b2cbf;
+    color: white;
+    border-radius: 200px 200px 200px 200px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5c1f8a;
+}
+.btn::after{
+	content: "";
+    background-image: url("../taklif/site4/icon/icon-arrow.svg");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 55%;
+	height: 55%;
+}
